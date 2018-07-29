@@ -2,7 +2,7 @@ class BankAccount
 
   attr_accessor :name, :status, :validity, :balance, :bank_account, :deposit
 
-  def initialize(name = name.freeze, balance = 1000, status = "open")
+  def initialize(name, balance = 1000, status = "open")
     @name = name
     @name.freeze
     @balance = balance
@@ -11,7 +11,7 @@ class BankAccount
 
 # name, balance, status needs to be frozen
   def deposit
-    @balance = @balance + @deposit
+    @balance + @deposit
   end
 
   def display_balance
