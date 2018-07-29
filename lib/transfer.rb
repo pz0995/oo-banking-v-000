@@ -23,7 +23,7 @@ attr_reader :status
       transfer = (@sender.balance - @amount && @receiver.balance + @amount)
         return transfer_status "complete"
     else
-    return false
+    return rejected
     end
   end
 end
