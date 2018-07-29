@@ -27,8 +27,6 @@ class BankAccount
 end
 
 # end
-
-
 # can't change its name (FAILED - 1)
 #   #deposit
 #     can deposit money into its account (FAILED - 2)
