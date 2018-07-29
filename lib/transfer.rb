@@ -20,7 +20,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
 end
 
   def execute_transaction
-    @seller.uniq?
+    @seller.uniq
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
       @receiver.balance  += amount
