@@ -11,6 +11,7 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
 
   def valid?
     sender.valid? && receiver.valid?
+     puts "Transaction rejected. Please check your account balance."
   end
 
 
@@ -33,9 +34,7 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
       @status  = "reversed"
     end
     #
-    def rejected
-      if !sender.valid?
-       puts "Transaction rejected. Please check your account balance."
+  
 end
     end
   end
