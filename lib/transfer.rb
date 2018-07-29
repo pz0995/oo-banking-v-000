@@ -1,6 +1,6 @@
 class Transfer
 
-attr_accessor :transfer, :bad_transfer, :deposit, :balance
+attr_accessor :transfer, :bad_transfer, :deposit, :transfer_amount
 
   def initialize(transfer, sender, receiver, status = "pending")
     @transfer = transfer
