@@ -26,6 +26,7 @@ end
 else
   !(sender.valid?)
      reject_transfer
+     return   @status == "rejected"
 
 end
 end
