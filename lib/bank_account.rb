@@ -26,6 +26,6 @@ class BankAccount
    end
 
   def close_account
-    @bank_account == "closed"? :status = "closed" :status = "open"
+    @bank_account == "closed"? @status = "closed" : @status = "open"
     end
   end
