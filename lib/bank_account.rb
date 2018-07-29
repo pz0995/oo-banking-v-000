@@ -11,7 +11,7 @@ class BankAccount
   end
 
   def deposit
-    @bank_account = @balance + @deposit
+    @bank_account.deposit = @balance + @deposit
   end
 
   def display_balance
