@@ -33,10 +33,10 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
       @status  = "reversed"
     end
     #
-    # def rejected
-    #   status = "rejected"
-    #    puts "Transaction rejected. Please check your account balance."
-    #
-    # end
+    def rejected
+      if !sender.valid
+       puts "Transaction rejected. Please check your account balance."
+    
+    end
   end
 end
