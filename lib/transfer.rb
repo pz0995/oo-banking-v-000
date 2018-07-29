@@ -9,7 +9,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
     @amount = amount
   end
 
-  def valid?(status))
+  def valid?(status)
     if sender.valid? && receiver.valid?
     return true
     else
