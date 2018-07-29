@@ -8,7 +8,7 @@ attr_accessor :transfer, :bad_transfer, :amount
     @receiver = receiver
     @amount = amount
     transfer = transfer.count
-    
+
   end
 #status freeze
 
@@ -21,7 +21,7 @@ attr_accessor :transfer, :bad_transfer, :amount
   end
 
 def execute_transaction
-  if amount != 0
+  if amount > 0
   sender - deposit && receiver + deposit
   return true
   end
