@@ -29,8 +29,8 @@ end
     end
 
 def reject_transfer
-  status = "rejected" 
-       "Transaction rejected. Please check your account balance." 
+  status = "rejected"
+       "Transaction rejected. Please check your account balance."
     end
 
 
@@ -46,4 +46,5 @@ def reject_transfer
      return reject_transfer
     end
   end
+end
 end
