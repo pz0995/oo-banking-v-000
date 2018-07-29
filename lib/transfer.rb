@@ -20,7 +20,7 @@ def execute_transaction
   if @deposit > 0
   sender - deposit && receiver + deposit
 else
-  false
+  return false
   end
 end
 
