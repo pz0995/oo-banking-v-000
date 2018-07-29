@@ -19,9 +19,9 @@ attr_reader :status
   end
 
   def execute_transaction
-    if valid? && @sender.balance > @amount && status == "pending"
-      @sender.balance -= amount
-      @receiver.balance += amount
+    if valid? && @sender > @amount && status == "pending"
+      @sender -= amount
+      @receiver += amount
       status = "complete"
     else
       rejected
