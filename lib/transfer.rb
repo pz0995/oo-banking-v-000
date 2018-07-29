@@ -6,7 +6,7 @@ attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_a
     @name = name
     @sender = sender
     @receiver = receiver
-    @status = "pending"
+    @status = status
     @transfer_amount = transfer_amount
   end
 
