@@ -1,13 +1,13 @@
 class Transfer
 
-attr_accessor :transfer, :bad_transfer, :amount, :balance
+attr_accessor :transfer, :bad_transfer, :deposit, :balance
 
   def initialize(sender, receiver, status = "pending")
     @transfer = transfer
     @sender = sender
     @receiver = receiver
-    @amount = amount
-    transfer = transfer.count
+    @deposit = deposit
+    @transfer = transfer.count
     @status = status
   end
 #status freeze
@@ -21,9 +21,8 @@ attr_accessor :transfer, :bad_transfer, :amount, :balance
   end
 
 def execute_transaction
-  if amount > 0
+  if @deposit > 0
   sender - deposit && receiver + deposit
-  return true
   end
 end
 
