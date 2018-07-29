@@ -18,7 +18,7 @@ attr_reader :status
     if valid? && receiver > 0
       @sender - @transfer_amount && @receiver + @transfer_amount
           return transfer_status "complete"
-  else
+    else
     return false
     end
   end
