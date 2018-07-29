@@ -28,14 +28,13 @@ attr_reader :status
     end
   end
 
-
-def reverse_transfer
-  receiver.balance -= amount
-  sender.balance += amount
-  status = "reversed"
-else
-  reject_transfer
-  end
+#
+# def reverse_transfer
+#   receiver.balance -= amount
+#   sender.balance += amount
+#   status = "reversed"
+# else
+#   reject_transfer
+#   end
 end
 end
-
