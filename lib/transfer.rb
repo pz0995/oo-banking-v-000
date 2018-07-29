@@ -14,8 +14,9 @@ attr_reader :status
     sender.valid? && receiver.valid?
   end
 
-  def rejected(status = "rejected")
+  def rejected
     if !sender.valid
+      status = "rejected"
       return bad_transfer = "Transaction rejected. Please check your account balance."
     end
 
