@@ -30,12 +30,12 @@ attr_reader :status
   end
 
 def reverse_transfer
-    @receiver - @transfer_amount && @sender + @transfer_amount
-  if @transfer_status == "complete"
-  return @transfer_status = "reversed"
-  end
-end
-
-
+        receiver.balance -= amount
+        sender.balance += amount
+        status = "reversed"
+      else
+        reject_transfer
+      end
+    end
 end
 end
