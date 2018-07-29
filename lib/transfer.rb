@@ -1,6 +1,6 @@
 class Transfer
 
-attr_accessor :amount, :transfer_status, :status, :sender, :receiver
+attr_accessor :amount, :status, :sender, :receiver
 
   def initialize(status = "pending", sender, receiver, amount)
     @status = status
@@ -11,7 +11,7 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
 
   def valid?
     sender.valid? && receiver.valid?
-     @status = "Transaction rejected. Please check your account balance."
+    #  @status = "Transaction rejected. Please check your account balance."
   end
 
 
