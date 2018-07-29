@@ -7,7 +7,7 @@ class BankAccount
     name.freeze
     @balance = balance
     @status = status
-    @closed = status.closed
+
   end
 
 # name, balance, status needs to be frozen
