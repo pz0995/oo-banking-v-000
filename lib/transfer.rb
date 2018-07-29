@@ -29,7 +29,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
       #  @status = "rejected"
     end
     if status = "complete"
-      return false
+    end transfer
     end
   end
 
