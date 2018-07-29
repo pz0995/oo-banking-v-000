@@ -16,7 +16,7 @@ attr_reader :status
 
   def rejected
     if !sender.valid
-      puts bad_transfer = "Transaction rejected. Please check your account balance." && status = "rejected" 
+      puts bad_transfer = "Transaction rejected. Please check your account balance." && status = "rejected"
     end
   end
 
