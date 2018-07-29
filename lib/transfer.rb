@@ -14,10 +14,10 @@ attr_reader :status
     sender.valid? && receiver.valid?
   end
 
-  def rejected
-    puts "Transaction rejected. Please check your account balance."
-        status = "rejected"
-  end
+  # def rejected
+  #   puts "Transaction rejected. Please check your account balance."
+  #       status = "rejected"
+  # end
 
   def execute_transaction
     if valid? && @sender.balance > @amount && status == "complete"
@@ -25,7 +25,8 @@ attr_reader :status
       @receiver.balance  += amount
       status = "complete"
     else
-      valid? == rejected
+      status = "rejected"
+      !valid? ==  "Transaction rejected. Please check your account balance."
     end
   end
 
@@ -35,7 +36,8 @@ attr_reader :status
       @sender.balance  += amount
       @status.balance  = "reversed"
     else
-      valid? == rejected
+      status = "rejected"
+      !valid? = "Transaction rejected. Please check your account balance."
     end
   end
 end
