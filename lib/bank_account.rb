@@ -26,7 +26,7 @@ class BankAccount
       @status = "closed"
   end
 end
-
+end
 
 # end
 # can't change its name (FAILED - 1)
