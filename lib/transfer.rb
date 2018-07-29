@@ -9,7 +9,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
     @amount = amount
   end
 
-  def valid?
+  def valid?(status))
     if sender.valid? && receiver.valid?
     return true
     else
@@ -18,7 +18,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
   end
 end
 
-  def execute_transaction(status)
+  def execute_transaction
     # @seller.uniq
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
