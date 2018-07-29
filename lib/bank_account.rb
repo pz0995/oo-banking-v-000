@@ -17,13 +17,14 @@ class BankAccount
     @balance += deposit
   end
 
-  def valid?
-     balance > 0 && status == "open"
-  end
-
   def close_account
     @status = "closed"
   end
+
+
+    def valid?
+       balance > 0 && status == "open"
+    end
 
 end
 
