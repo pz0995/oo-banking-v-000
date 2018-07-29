@@ -8,7 +8,7 @@ attr_accessor :transfer, :bad_transfer, :deposit, :balance
     @receiver = receiver
     @deposit = deposit
     @transfer = transfer.count
-    @status = status
+    @status = status.freeze
   end
 #status freeze
 
