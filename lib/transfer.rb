@@ -19,8 +19,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
 
 
   def execute_transaction
-    if status = "complete"
-    return "duplicate transfer"
+
   end
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
