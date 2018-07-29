@@ -28,6 +28,7 @@ end
     return false
     end
   end
+end
 #
 # def reverse_transfer
 #         receiver.balance -= amount
