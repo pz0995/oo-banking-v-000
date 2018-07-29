@@ -30,9 +30,9 @@ attr_reader :status
   end
 
   def reverse_transfer
-    if valid? && receiver.balance > amount && status == "complete"
-      receiver.balance -= amount
-      sender.balance += amount
+    if valid? && receiver > amount && status == "complete"
+      receiver -= amount
+      sender += amount
       status = "reversed"
     else
       rejected
