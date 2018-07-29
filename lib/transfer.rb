@@ -22,7 +22,7 @@ attr_accessor :transfer, :bad_transfer, :deposit, :balance
 
 def execute_transaction
   if @deposit > 0
-  sender - deposit && receiver + deposit
+  sender.bank_account - deposit && receiver.bank_account + deposit
   end
 end
 
