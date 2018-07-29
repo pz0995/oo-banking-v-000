@@ -36,5 +36,5 @@ attr_reader :status
 # else
 #   reject_transfer
 #   end
-end
+# end
 end
