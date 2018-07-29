@@ -24,7 +24,8 @@ end
       @receiver.balance  += amount
       @status = "complete"
 else
-     return    "Transaction rejected. Please check your account balance."
+     return      status = "rejected"
+     "Transaction rejected. Please check your account balance."
 
 end
 end
