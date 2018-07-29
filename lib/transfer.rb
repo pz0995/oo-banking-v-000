@@ -26,8 +26,8 @@ else
 end
 
 def reverse_transfer
+    @receiver - deposit && @sender + @deposit
   if @transfer_status = "complete"
-  @receiver - deposit && @sender + @deposit
   puts @transfer_status = "reversed"
 end
 end
