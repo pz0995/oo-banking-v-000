@@ -14,7 +14,7 @@ class BankAccount
   end
 
   def deposit(deposit)
-    @balance += amount unless amount < 0
+    @balance += amount
   end
 
   def valid?
@@ -22,7 +22,7 @@ class BankAccount
   end
 
   def close_account
-    @status = "closed" && balance = 0
+    @status = "closed"
   end
 
 end
