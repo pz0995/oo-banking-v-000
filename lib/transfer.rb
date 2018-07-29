@@ -2,15 +2,15 @@ class Transfer
 
 attr_accessor :transfer, :bad_transfer, :deposit, :balance
 
-  def initialize(sender, receiver, status = "pending")
+  def initialize(transfer, sender, receiver, status = "pending")
     @transfer = transfer
     @sender = sender
     @receiver = receiver
+    @status = status
     @deposit = deposit
-    @transfer = transfer.count
-    @status = status.freeze
+    @amount = amount
   end
-#status freeze
+
 
   def valid?
     # if sender (@status "open" && balance > 0) && receiver == (@status "open" && balance > 0)
