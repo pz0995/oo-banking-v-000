@@ -8,7 +8,7 @@ attr_accessor :transfer, :bad_transfer, :deposit, :balance
     @receiver = receiver
     @status = status
     @deposit = deposit
-    @amount = amount
+    @transfer_amount = transfer_amount
   end
 
 
