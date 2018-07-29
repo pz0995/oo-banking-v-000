@@ -18,10 +18,10 @@ attr_reader :status
     if valid? @sender - @transfer_amount && @receiver + @transfer_amount
     if @transfer_amount > 0
     return transfer_status "complete"
-else
-  return false
+  else
+    return false
+    end
   end
-end
 
 def reverse_transfer
     @receiver - @transfer_amount && @sender + @transfer_amount
@@ -33,6 +33,7 @@ end
   def reject
 
   end
+end
 end
   #
   # #    initialize
