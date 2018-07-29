@@ -31,7 +31,8 @@ def reverse_transfer
 end
 
   def reject
-
+    status = "rejected"
+    puts "Transaction rejected. Please check your account balance."
   end
 end
 end
