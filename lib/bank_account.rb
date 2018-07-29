@@ -24,10 +24,10 @@ class BankAccount
   end
 
   def close_account(status)
-     if @status = "closed" 
+     if @status = "closed"
        @bank_account.closed
-       
-       
+
+end
   end
 end
 # can't change its name (FAILED - 1)
