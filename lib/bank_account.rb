@@ -9,7 +9,7 @@ class BankAccount
   end
 
 # name, balance, status needs to be frozen
-  def deposit(balance)
+  def deposit
     @balance = balance + deposit
   end
 
