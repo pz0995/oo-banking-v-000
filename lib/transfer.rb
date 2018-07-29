@@ -25,7 +25,7 @@ end
       @sender.balance  -= amount
       @receiver.balance  += amount
       @status = "complete"
-    end
+    else
       if @status == "rejected"
       return "Transaction rejected. Please check your account balance."
     end
