@@ -4,6 +4,7 @@ attr_accessor :sender, :receiver, :bad_transfer, :transfer_amount, :transfer_sta
 attr_reader :status
 
   def initialize(sender, receiver, status = "pending", transfer_amount)
+    @status = status
     @sender = sender
     @receiver = receiver
     @transfer_amount = transfer_amount
