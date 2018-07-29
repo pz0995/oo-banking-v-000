@@ -19,9 +19,10 @@ attr_reader :status
       status = "rejected"
       return bad_transfer = "Transaction rejected. Please check your account balance."
     end
-end
+  end
+
   def execute_transaction
-    if sender.balance > transfer_amount && status == "pending"
+    if sender = valid && sender.balance > transfer_amount && status == "pending"
       transfer = (@sender.balance - @transfer_amount && @receiver.balance + @transfer_amount)
           return transfer_status "complete"
     else
