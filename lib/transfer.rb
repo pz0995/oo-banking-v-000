@@ -32,7 +32,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
     return "duplicate transfer"
   end
     end
-  end
+  e
 
   def reverse_transfer
     if @status == "complete"
