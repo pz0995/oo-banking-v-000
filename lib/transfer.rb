@@ -10,6 +10,8 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
   end
 
   def valid?
+    sender.valid? && receiver.valid?
+    return true
     !(sender.valid? && receiver.valid?)
     @status = "Transaction rejected. Please check your account balance."
     # @status = "rejected"
