@@ -12,6 +12,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
   def valid?
     if sender.valid? && receiver.valid?
     return true
+  else
     !(sender.valid? && receiver.valid?)
     # @status =
     if @status == "rejected"
