@@ -11,7 +11,7 @@ class BankAccount
 
 # name, balance, status needs to be frozen
   def deposit
-    @balance = balance + deposit
+    @balance = @balance + deposit
   end
 
   def display_balance
