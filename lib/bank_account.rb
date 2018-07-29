@@ -27,7 +27,7 @@ class BankAccount
     #  @status == "closed"? true : false
 
 end
-  end
+
 
 # can't change its name (FAILED - 1)
 #   #deposit
