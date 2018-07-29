@@ -24,7 +24,6 @@ class BankAccount
   end
 
   def close_account(status)
-    if @status = "closed"
-      return "closed"
+     @status = "closed"
   end
 end
