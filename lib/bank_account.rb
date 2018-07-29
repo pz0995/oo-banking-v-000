@@ -9,13 +9,15 @@ class BankAccount
     @status = status
   end
 
-  def display_balance
-    "Your balance is $#{@balance}."
-  end
 
   def deposit(deposit)
     @balance += deposit
   end
+
+  
+    def display_balance
+      "Your balance is $#{@balance}."
+    end  
 
   def close_account
     @status = "closed"
