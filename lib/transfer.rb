@@ -14,7 +14,6 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
   end
 
 
-
   def execute_transaction
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
