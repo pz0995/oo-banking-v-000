@@ -36,8 +36,9 @@ rejected
     #   puts "Transaction rejected. Please check your account balance." && status = "rejected"
     end
 
-    def rejected(status = "rejected")
-      puts "Transaction rejected. Please check your account balance."
+    def rejected
+      status = "rejected"     
+       puts "Transaction rejected. Please check your account balance."
 
     end
   end
