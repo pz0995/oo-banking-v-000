@@ -2,13 +2,13 @@ class Transfer
 
 attr_accessor :transfer, :bad_transfer, :amount
 
-  def initialize
+  def initialize(status = "pending")
     @transfer = transfer.new
-    sender = sender_name
-    receiver = receiver_name
-    amount = transfer_amount
+    @sender = sender
+    @receiver = receiver
+    @amount = amount
     transfer = transfer.count
-    status = "pending".freeze
+    
   end
 #status freeze
 
