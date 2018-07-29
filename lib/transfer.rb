@@ -28,7 +28,8 @@ end
 def reverse_transfer
   if transfer_status = "complete"
   receiver - deposit && sender + deposit
-  end
+  transfer_status = "reversed"  
+end
 end
 
 end
