@@ -20,7 +20,7 @@ attr_reader :status
   end
 
   def execute_transaction
-    if valid? && @sender.balance > @amount
+    if valid? && @sender.balance > @amount && status == "complete"
       @sender.balance  -= amount
       @receiver.balance  += amount
       status = "complete"
@@ -30,10 +30,10 @@ attr_reader :status
   end
 
   def reverse_transfer
-    if valid? && receiver.balance  > amount && status == "complete"
-      receiver.balance  -= amount
-      sender.balance  += amount
-      status.balance  = "reversed"
+    if valid? && @receiver.balance > @amount && status == "complete"
+      @receiver.balance  -= amount
+      @sender.balance  += amount
+      @status.balance  = "reversed"
     else
       valid? == rejected
     end
