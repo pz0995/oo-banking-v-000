@@ -14,7 +14,7 @@ class BankAccount
   end
 
   def deposit(deposit)
-    @balance = (@balance + @deposit)
+    @balance += amount unless amount < 0
   end
 
   def valid?
