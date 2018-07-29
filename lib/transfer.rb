@@ -10,8 +10,8 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
   end
 
   def valid?
-    !sender.valid? && !receiver.valid?
-     puts "Transaction rejected. Please check your account balance."
+    sender.valid? && receiver.valid?
+    #  puts "Transaction rejected. Please check your account balance."
   end
 
 
