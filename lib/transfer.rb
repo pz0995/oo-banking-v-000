@@ -20,7 +20,7 @@ end
 
   def execute_transaction
     # @seller.uniq
-    if @sender.balance > @amount && valid?
+    if @sender.balance > @amount && valid? && @status != "complete"
       @sender.balance  -= amount
       @receiver.balance  += amount
       @status = "complete"
