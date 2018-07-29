@@ -14,10 +14,10 @@ attr_accessor :transfer, :bad_transfer, :amount, :balance
 
   def valid?
     # if sender (@status "open" && balance > 0) && receiver == (@status "open" && balance > 0)
-      return true
-    else
-      return false
-    end
+    #   return true
+    # else
+    #   return false
+    # end
   end
 
 def execute_transaction
