@@ -15,7 +15,8 @@ attr_reader :status
   end
 
   def rejected
-    return bad_transfer = "Transaction rejected. Please check your account balance." && status = "rejected"
+    status = "rejected"
+    bad_transfer = "Transaction rejected. Please check your account balance."
   end
 
   def execute_transaction
