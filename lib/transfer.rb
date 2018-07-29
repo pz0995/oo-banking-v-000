@@ -27,7 +27,7 @@ end
 
 def reverse_transfer
   if @transfer_status = "complete"
-  @receiver - @deposit && @sender + @deposit
+  @receiver - deposit && @sender + @deposit
   @transfer_status = "reversed"
 end
 end
