@@ -28,8 +28,6 @@ class BankAccount
 
 end
 
-# end
-# can't change its name (FAILED - 1)
-#   #deposit
+
 #     can deposit money into its account (FAILED - 2)
-#        can close its account (FAILED - 3)
+#      is valid with an open status and a balance greater than 0
