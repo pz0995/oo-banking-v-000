@@ -13,6 +13,7 @@ attr_reader :status
 
   def valid?
     sender.valid? && receiver.valid?
+  end
 
   def execute_transaction
     if valid? @sender - @transfer_amount && @receiver + @transfer_amount
