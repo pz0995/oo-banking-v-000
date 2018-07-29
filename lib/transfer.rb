@@ -31,6 +31,7 @@ def reverse_transfer
 end
 
   def reject(status = "rejected")
-    bad_transfer = "Transaction rejected. Please check your account balance."
+    if sender !valid?
+      return bad_transfer = "Transaction rejected. Please check your account balance."
   end
 end
