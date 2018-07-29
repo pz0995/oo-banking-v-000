@@ -19,7 +19,9 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
 
 
   def execute_transaction
-
+    if status = "complete"
+    return "duplicate transfer"
+  end
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
       @receiver.balance  += amount
@@ -28,9 +30,8 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
        "Transaction rejected. Please check your account balance."
       #  @status = "rejected"
     end
-    if status = "complete"
-    return "duplicate transfer"
-  end
+
+
     end
 
 
