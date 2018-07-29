@@ -14,7 +14,7 @@ class BankAccount
   end
 
   def deposit(deposit)
-    @balance += amount
+    @balance += deposit
   end
 
   def valid?
