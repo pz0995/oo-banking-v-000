@@ -26,3 +26,4 @@ class BankAccount
     @bank_account == "closed"? @status = "closed" : @status = "open"
     end
   end
+end
