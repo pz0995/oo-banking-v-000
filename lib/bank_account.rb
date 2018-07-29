@@ -6,7 +6,7 @@ class BankAccount
     @name = name
     name.freeze
     @balance = balance
-    @status = "open"
+    @status = status
   end
 
 # name, balance, status needs to be frozen
@@ -25,7 +25,7 @@ class BankAccount
 
   def close_account(status)
      @status == "closed"? true : false
-end
+
 end
   end
 
