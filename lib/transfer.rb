@@ -26,7 +26,7 @@ end
       @status = "complete"
     else
 
-      !(sender.valid? && receiver.valid?) && @status == "rejected"
+      !(sender.valid? && receiver.valid?)
         return reject_transfer
     end
 end
