@@ -17,7 +17,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
     if @status == "rejected"
     return "Transaction rejected. Please check your account balance."
   end
-
+end
 
   def execute_transaction
 
