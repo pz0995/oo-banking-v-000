@@ -19,6 +19,8 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
 
 
   def execute_transaction
+    if status = "complete"
+      return false
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
       @receiver.balance  += amount
