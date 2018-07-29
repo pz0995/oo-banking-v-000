@@ -17,7 +17,7 @@ attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_a
   # end
 
 def execute_transaction
-  if @deposit > 0
+  if @transfer_amount > 0
   sender - deposit && receiver + deposit
 else
   return false
