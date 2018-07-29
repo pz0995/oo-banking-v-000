@@ -25,7 +25,7 @@ end
       @status = "complete"
 else
   !(sender.valid?)
-    return reject_transfer
+     reject_transfer
 
 end
 end
