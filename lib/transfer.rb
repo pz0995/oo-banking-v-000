@@ -25,9 +25,11 @@ end
       @receiver.balance  += amount
       @status = "complete"
     else
+        status = "rejected"
     reject_transfer
     end
 end
+
 def reject_transfer
   status = "rejected"
        "Transaction rejected. Please check your account balance."
