@@ -30,8 +30,7 @@ def reverse_transfer
   end
 end
 
-  def reject
+  def reject(status = "rejected")
     bad_transfer = "Transaction rejected. Please check your account balance."
-        status = "rejected"
   end
 end
