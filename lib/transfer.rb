@@ -21,7 +21,7 @@ end
 
   def execute_transaction
 
-
+@sender.uniq
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
       @receiver.balance  += amount
