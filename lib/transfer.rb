@@ -30,6 +30,7 @@ attr_accessor :amount, :status, :sender, :receiver, :bad_transfer
     end
     if status = "complete"
     end transfer
+  end
     end
   end
 
