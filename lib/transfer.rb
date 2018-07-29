@@ -24,7 +24,7 @@ end
       @receiver.balance  += amount
       @status = "complete"
 else
-     return  @status == "rejected"
+     return "rejected"
 
 end
 end
