@@ -28,7 +28,7 @@ attr_reader :status
     end
   end
     end
-  end
+
 
 #
 # def reverse_transfer
