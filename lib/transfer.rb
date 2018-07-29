@@ -25,7 +25,7 @@ attr_reader :status
       @receiver.balance  += amount
       status = "complete"
     else
-      !valid? = rejected
+      !valid? == rejected
     end
   end
 
@@ -35,7 +35,7 @@ attr_reader :status
       sender.balance  += amount
       status.balance  = "reversed"
     else
-      !valid? rejected
+      !valid? == rejected
     end
   end
 end
