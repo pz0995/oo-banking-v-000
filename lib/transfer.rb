@@ -21,7 +21,7 @@ attr_reader :status
     end
 end
   def execute_transaction
-    if valid? && receiver > 0
+    if valid? && receiver > transfer_amount
       @sender - @transfer_amount && @receiver + @transfer_amount
           return transfer_status "complete"
     else
