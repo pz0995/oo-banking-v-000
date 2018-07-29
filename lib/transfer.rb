@@ -1,6 +1,6 @@
 class Transfer
 
-attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_amount
+attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_amount, :transfer_status
 
   def initialize(transfer, sender, receiver, status = "pending", transfer_amount)
     @transfer = transfer
@@ -26,7 +26,7 @@ else
 end
 
 def reverse_transfer
-  if execute_transaction == true
+  if transfer_status = "complete"
   receiver - deposit && sender + deposit
   end
 end
