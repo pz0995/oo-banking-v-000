@@ -35,7 +35,7 @@ attr_reader :status
       sender.balance += amount
       status = "reversed"
     else
-      reject_transfer
+      rejected
     end
   end
 end
