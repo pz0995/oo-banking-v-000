@@ -32,5 +32,3 @@ class BankAccount
       status = "open"
     end
   end
-end
-end
