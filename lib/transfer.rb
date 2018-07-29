@@ -13,7 +13,7 @@ attr_accessor :transfer, :bad_transfer, :amount, :sender, :receiver
 #status freeze
 
   def valid?
-    if sender. == valid && receiver == valid
+    if sender == valid && receiver == valid
       return true
     else
       return false
