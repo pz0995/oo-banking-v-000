@@ -4,8 +4,8 @@ attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_a
 
   def initialize(transfer, sender, receiver, status = "pending", transfer_amount)
     @transfer = transfer
-    @sender = sender.name
-    @receiver = receiver.name
+    @sender = sender
+    @receiver = receiver
     @status = status
     @transfer_amount = transfer_amount
   end
@@ -18,7 +18,9 @@ attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_a
 
 def execute_transaction
   if @deposit > 0
-  sender.bank_account - deposit && receiver.bank_account + deposit
+  sender - deposit && receiver + deposit
+else
+  false
   end
 end
 
