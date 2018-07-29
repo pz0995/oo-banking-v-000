@@ -6,11 +6,10 @@ class BankAccount
     @name =  name.freeze
     @balance = balance
     @status = "open"
-    # @status = status.freeze
   end
 
 # name, balance, status needs to be frozen
-  def deposit
+  def deposit(balance)
     @balance = @balance + deposit
   end
 
