@@ -24,14 +24,13 @@ end
       @receiver.balance  += amount
       @status = "complete"
 else
-  !(sender.valid?)
      reject_transfer
-     return   @status == "rejected"
 
 end
 end
 
 def reject_transfer
+    !(sender.valid?)
   status = "rejected"
        "Transaction rejected. Please check your account balance."
     end
