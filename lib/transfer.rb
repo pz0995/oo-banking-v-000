@@ -37,7 +37,7 @@ rejected
     end
 
     def rejected
-      status = "rejected"     
+      status = "rejected"
        puts "Transaction rejected. Please check your account balance."
 
     end
