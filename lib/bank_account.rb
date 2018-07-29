@@ -28,5 +28,5 @@ class BankAccount
 end
 
 
-#     can deposit money into its account (FAILED - 2)
+#     can deposit money into its account
 #      is valid with an open status and a balance greater than 0
