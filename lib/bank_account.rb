@@ -4,14 +4,14 @@ class BankAccount
 
   def initialize(name, balance = 1000, status = "open")
     @name = name
-    @name.freeze
+    name.freeze
     @balance = balance
     @status = "open"
   end
 
 # name, balance, status needs to be frozen
   def deposit
-    @bank_account = @balance + @deposit
+    @balance = @balance + @deposit
   end
 
   def display_balance
