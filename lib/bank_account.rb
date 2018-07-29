@@ -10,7 +10,6 @@ class BankAccount
 
   end
 
-# name, balance, status needs to be frozen
   def deposit
     @bank_account = @balance + @deposit
   end
@@ -20,7 +19,7 @@ class BankAccount
   end
 
   def valid?
-   @status == "open" && @balance > 0? true : false
+     @status == "open" && @balance > 0? true : false
      end
   end
 
