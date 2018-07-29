@@ -14,6 +14,11 @@ attr_reader :status
     sender.valid? && receiver.valid?
   end
 
+  def reject(status = "rejected")
+    if !sender.valid?
+      return bad_transfer = "Transaction rejected. Please check your account balance."
+  end
+  
   def execute_transaction
     if valid? && receiver > 0
       @sender - @transfer_amount && @receiver + @transfer_amount
@@ -30,9 +35,6 @@ def reverse_transfer
   end
 end
 
-  def reject(status = "rejected")
-    if !sender.valid?
-      return bad_transfer = "Transaction rejected. Please check your account balance."
-  end
+  
 end
 end
