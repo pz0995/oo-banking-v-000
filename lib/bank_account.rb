@@ -10,7 +10,7 @@ class BankAccount
 
   end
 
-  def deposit(balance)
+  def deposit
     @balance = @balance + @deposit
   end
 
@@ -24,11 +24,9 @@ class BankAccount
   end
 
   def close_account
-    if close_account = true
+    if name.close_account = true
         @status = "closed"
   end
-    # close_account = (@status = "closed")
-
 
 end
 
