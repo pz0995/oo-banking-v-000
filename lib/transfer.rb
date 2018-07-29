@@ -26,8 +26,8 @@ end
       @sender.balance  -= amount
       @receiver.balance  += amount
       return @status = "complete"
-    
 
+end
 end
 
 def reject_transfer
