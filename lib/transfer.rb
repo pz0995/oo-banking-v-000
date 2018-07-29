@@ -13,7 +13,7 @@ attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_a
 
   def valid?
     @status == "open" && @balance > 0? true : false
-    end
+
   end
 
 def execute_transaction
