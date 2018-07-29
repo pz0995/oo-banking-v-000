@@ -25,8 +25,7 @@ end
       @receiver.balance  += amount
       @status = "complete"
     else
-        puts "rejected"
-    reject_transfer
+        return reject_transfer
     end
 end
 
