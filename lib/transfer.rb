@@ -26,7 +26,7 @@ attr_reader :status
       status = "complete"
     else
       status = "rejected"
-      "Transaction rejected. Please check your account balance."
+      puts "Transaction rejected. Please check your account balance."
     end
   end
 
@@ -37,7 +37,7 @@ attr_reader :status
       @status.balance  = "reversed"
     else
       status = "rejected"
-      "Transaction rejected. Please check your account balance."
+      puts "Transaction rejected. Please check your account balance."
     end
   end
 end
