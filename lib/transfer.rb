@@ -33,7 +33,5 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
 
       @status  = "reversed"
     end
-    
-    end
   end
 end
