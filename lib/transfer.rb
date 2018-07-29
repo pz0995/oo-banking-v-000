@@ -19,14 +19,14 @@ attr_accessor :amount, :transfer_status, :status, :sender, :receiver
     if @sender.balance > @amount && valid?
       @sender.balance  -= amount
       @receiver.balance  += amount
-      status = "complete"
+      @status = "complete"
     else
        "Transaction rejected. Please check your account balance."
     end
   end
 
   def reverse_transfer
-    if status == "complete"
+    if @status == "complete"
       # && valid?
       @sender.balance  += amount
       @receiver.balance  -= amount
