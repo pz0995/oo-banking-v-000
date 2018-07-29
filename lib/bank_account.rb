@@ -27,3 +27,4 @@ class BankAccount
     if @status = "closed"
       return "closed"
   end
+end
