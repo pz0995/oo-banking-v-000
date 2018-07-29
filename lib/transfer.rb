@@ -20,7 +20,7 @@ attr_reader :status
 
   def execute_transaction
     if !@sender.valid?
-      puts rejected
+      return status = "rejected"
       # &&  @sender > @amount && @status == "pending" then
       transfer = (@sender.balance - @amount && @receiver.balance + @amount)
         return transfer_status "complete"
