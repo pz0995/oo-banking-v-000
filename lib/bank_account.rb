@@ -13,7 +13,7 @@ class BankAccount
 
 # name, balance, status needs to be frozen
   def deposit
-    puts bank_account = @balance + deposit
+    puts @balance = @balance + deposit
   end
 
   def display_balance
