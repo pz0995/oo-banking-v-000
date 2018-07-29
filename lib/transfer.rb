@@ -25,6 +25,8 @@ end
       @receiver.balance  += amount
       @status = "complete"
     else
+    else
+      !(sender.valid? && receiver.valid?) && @status == "rejected"    
         return reject_transfer
     end
 end
