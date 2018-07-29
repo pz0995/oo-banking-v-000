@@ -26,7 +26,7 @@ attr_reader :status
       status = "complete"
     else
 
-      puts "Transaction rejected. Please check your account balance." && status = "rejected"
+       "Transaction rejected. Please check your account balance." && status = "rejected"
     end
   end
 
