@@ -26,7 +26,7 @@ end
 else
   !(sender.valid?)
     return reject_transfer
-else
+
 end
 end
 
