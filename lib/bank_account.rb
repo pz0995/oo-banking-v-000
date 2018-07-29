@@ -1,6 +1,6 @@
 class BankAccount
 
-  attr_accessor :name, :status, :validity, :balance, :bank_account, :deposit
+  attr_accessor :status, :validity, :balance, :bank_account, :deposit
 
   def initialize(name, balance = 1000, status = "open")
     @name = name
