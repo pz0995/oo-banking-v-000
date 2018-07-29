@@ -15,7 +15,7 @@ class BankAccount
   end
 
   def display_balance
-    @balance = "Your balance is $#{@balance}."
+    @balance = "Your balance is $#{name.balance}."
   end
 
   def valid?
