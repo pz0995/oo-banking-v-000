@@ -11,10 +11,10 @@ attr_accessor :transfer, :sender, :receiver, :bad_transfer, :status, :transfer_a
   end
 
 
-  def valid?
-    if @sender (@status == "open" && @balance > 0? true : false)
-    if @receiver (@status == "open" && @balance > 0? true : false)
-  end
+  # def valid?
+  #   if @sender (@status == "open" && @balance > 0? true : false)
+  #   if @receiver (@status == "open" && @balance > 0? true : false)
+  # end
 
 def execute_transaction
   if @deposit > 0
