@@ -32,6 +32,6 @@ end
 
   def reject
     status = "rejected"
-    puts "Transaction rejected. Please check your account balance."
+    bad_transfer = "Transaction rejected. Please check your account balance."
   end
 end
