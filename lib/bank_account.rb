@@ -3,7 +3,7 @@ class BankAccount
   attr_accessor :name, :status, :validity, :balance, :bank_account, :deposit
 
   def initialize(name, balance = 1000, status = "open")
-    @name =  name
+    @name = name
     @name.freeze
     @balance = balance
     @status = "open"
@@ -24,8 +24,10 @@ class BankAccount
   end
 
   def close_account(status)
-     if @status = "open"
-       @status = "closed"
+     if @status = "closed" 
+       @bank_account.closed
+       
+       
   end
 end
 # can't change its name (FAILED - 1)
